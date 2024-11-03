@@ -101,12 +101,6 @@ To run the tests:
 - **MetaMask Compatibility**: MetaMask must be installed and enabled in the browser to use wallet-related features.
 - **Mocking `window.ethereum` in tests**: Some tests require mocking `window.ethereum` to simulate MetaMask; ensure mocks are correctly configured.
 
-## Future Improvements
-
-- Add additional wallet support (e.g., WalletConnect).
-- Implement form validation and error handling for login/signup.
-- Improve test coverage, especially for error scenarios.
-
 ## Contributing
 
 To contribute:
