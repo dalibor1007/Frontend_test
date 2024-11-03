@@ -33,8 +33,10 @@ Ensure you have the following installed:
    git clone https://github.com/GP-Vote/hiring-task.git   
    cd hiring-task
 
-3. Install backend dependencies:
-4. Start the backend server:
+2. Install backend dependencies:
+3. Start the backend server:
+   ```bash
+   npm run dev
 
 The backend server will typically run at `http://localhost:8000` (verify in the backend README or configuration). Ensure it’s running before starting the frontend.
 
@@ -44,13 +46,13 @@ The backend server will typically run at `http://localhost:8000` (verify in the 
    ```bash
    git clone https://github.com/skydiver1007/Frontend_test.git cd Frontend_test
 
-3. Install frontend dependencies:
+2. Install frontend dependencies:
    ```bash
    npm install
 
-5. Create a `.env` file in the root directory with the following environment variable:
+3. Create a `.env` file in the root directory with the following environment variable:
 
-6. Start the frontend development server:
+4. Start the frontend development server:
    ```bash
    npm start
 
@@ -80,9 +82,10 @@ This project includes unit and integration tests located in the `test` directory
 
 ### Running Tests
 
-To run the tests:
-```bash
-npm test  
+To run the tests:  
+
+`npm test`  
+
 
 ### Test Coverage
 
