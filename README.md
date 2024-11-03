@@ -1,4 +1,4 @@
-# Frontend Test for Title Management
+# Frontend Test for Title Management By Dalibor Stefanovic
 
 This project is a frontend application designed to manage user titles with features like login/signup, MetaMask wallet connect, and CRUD operations for title management. It is built using React and includes integration with MetaMask for wallet connectivity, as well as JWT authentication and title management.
 
@@ -119,4 +119,4 @@ To contribute:
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source by Dalibor and available under the [MIT License](LICENSE).
