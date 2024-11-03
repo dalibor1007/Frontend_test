@@ -29,10 +29,11 @@ Ensure you have the following installed:
 ### Setting up the Backend
 
 1. First, clone and set up the backend API server from the following repository:
-   git clone https://github.com/GP-Vote/hiring-task.git `cd hiring-task`
+   git clone https://github.com/GP-Vote/hiring-task.git   
+   `cd hiring-task`
 
-2. Install backend dependencies:
-3. Start the backend server:
+3. Install backend dependencies:
+4. Start the backend server:
 
 The backend server will typically run at `http://localhost:8000` (verify in the backend README or configuration). Ensure it’s running before starting the frontend.
 
