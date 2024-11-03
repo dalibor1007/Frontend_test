@@ -44,7 +44,8 @@ The backend server will typically run at `http://localhost:8000` (verify in the 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/skydiver1007/Frontend_test.git cd Frontend_test
+   git clone https://github.com/skydiver1007/Frontend_test.git  
+   cd Frontend_test
 
 2. Install frontend dependencies:
    ```bash
