@@ -29,8 +29,9 @@ Ensure you have the following installed:
 ### Setting up the Backend
 
 1. First, clone and set up the backend API server from the following repository:
+   ```bash
    git clone https://github.com/GP-Vote/hiring-task.git   
-   `cd hiring-task`
+   cd hiring-task
 
 3. Install backend dependencies:
 4. Start the backend server:
@@ -40,14 +41,17 @@ The backend server will typically run at `http://localhost:8000` (verify in the 
 ### Setting up the Frontend
 
 1. Clone this repository:
+   ```bash
    git clone https://github.com/skydiver1007/Frontend_test.git cd Frontend_test
 
-2. Install frontend dependencies:
+3. Install frontend dependencies:
+   ```bash
    npm install
 
-3. Create a `.env` file in the root directory with the following environment variable:
+5. Create a `.env` file in the root directory with the following environment variable:
 
-4. Start the frontend development server:
+6. Start the frontend development server:
+   ```bash
    npm start
 
 Open your browser and navigate to `http://localhost:3000`.
@@ -77,6 +81,7 @@ This project includes unit and integration tests located in the `test` directory
 ### Running Tests
 
 To run the tests:
+```bash
 npm test
 
 ### Test Coverage
