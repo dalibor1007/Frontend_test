@@ -78,9 +78,9 @@ The **Title Management** page provides functionality to add and view titles asso
 ### API ENDPOINTS
 
 ### Base URL
-All requests are prefixed with the following base URL:
+All requests are prefixed with the following base URL:(for ex. http://localhost:8000/api/v1)
 
-### 1. Get Titles
+###  Get Titles
 **Endpoint:** `GET /title`  
 **Description:** Retrieves titles for the specified user.  
 **Headers:**  
@@ -110,6 +110,93 @@ All requests are prefixed with the following base URL:
      "message": "Token is missing or invalid"
    }   
 
+### Add Title
+
+**Endpoint:** `POST /title`  
+**Description:** Adds a new title for the user.
+
+**Headers:**
+- `Authorization`: Bearer token (from `localStorage`).
+- `Content-Type`: `application/json`
+
+**Request Body:**
+- `title` (string): The title to add.
+
+**Example Request:**
+`javascript
+const response = await addTitle("New Title");`
+**Expected Response:**
+
+- **Success (201):**
+  ```json
+  {
+    "success": true,
+    "data": {
+      "id": "new_title_id",
+      "title": "New Title",
+      "userId": "user_id"
+    }
+  }
+- **Error (400 or 401):**
+  ```json
+  {
+    "success": false,
+    "message": "Token is missing or invalid"
+  }
+  
+---
+
+### Login
+**Endpoint:** `POST /auth/login`  
+**Description:** Authenticates a user with their email and password and retrieves a token.  
+**Headers:** None  
+**Request Body:**  
+- `email` (string): The user's email.
+- `password` (string): The user's password.
+
+**Example Request:**
+`javascript
+const response = await login("user@example.com", "password123");
+**Expected Response:**
+
+- **Success (200):**
+  ```json
+  {
+    "success": true,
+    "data": {
+      "token": "your_jwt_token",
+      "user": {
+        "id": "user_id",
+        "email": "user@example.com",
+        "username": "username"
+      }
+    }
+  }
+## Register
+
+**Endpoint:** `POST /auth/register`  
+**Description:** Registers a new user with a username, email, and password.  
+**Headers:** None  
+
+**Request Body:**
+
+- `username` (string): The desired username.
+- `email` (string): The user's email.
+- `password` (string): The user's password.
+
+**Example Request:**
+
+`javascript
+const response = await register("newUser", "newuser@example.com", "password123");
+
+**Expected Response:**
+
+- **Success (200):**
+  ```json
+  {
+    "success": true,
+    "message": "Registration successful"
+  }
 
 
 ## Testing
