@@ -1,12 +1,12 @@
 # Frontend Test for Title Management
 
-This project is a frontend application designed to manage user titles with features like login/signup, MetaMask wallet connect, and CRUD operations for title management. It is built using React and includes integration with MetaMask for wallet connectivity, as well as authentication and title management.
+This project is a frontend application designed to manage user titles with features like login/signup, MetaMask wallet connect, and CRUD operations for title management. It is built using React and includes integration with MetaMask for wallet connectivity, as well as JWT authentication and title management.
 
 ## Features
 
 - **Login/Signup**: Allows users to create an account and log in.
 - **Wallet Connect**: Connects to MetaMask for Ethereum wallet functionality.
-- **Title Management**: Perform CRUD (Create, Read, Update, Delete) operations for managing titles.
+- **Title Management**: Add and read titles you made(API for title delete is not yet made on backend. If you want, I would create it on backend).
 
 ## Technologies Used
 
@@ -50,9 +50,7 @@ The backend server will typically run at `http://localhost:8000` (verify in the 
    ```bash
    npm install
 
-3. Create a `.env` file in the root directory with the following environment variable:
-
-4. Start the frontend development server:
+3. Start the frontend development server:
    ```bash
    npm start
 
@@ -70,7 +68,7 @@ The **MetaMaskConnect** component enables users to connect their MetaMask wallet
 
 ### Title Management
 
-The **Title Management** page provides functionality to add, edit, delete, and view titles associated with the logged-in user.
+The **Title Management** page provides functionality to add and view titles associated with the logged-in user. You can access your titles only after wallet connecting via Metamask.
 
 ### Environment Variables
 
