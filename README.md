@@ -77,16 +77,38 @@ The **Title Management** page provides functionality to add and view titles asso
 
 ### API ENDPOINTS
 
-1. Get Titles
-Endpoint: GET /title
-Description: Retrieves titles for the specified user.
-Headers:
+### Base URL
+All requests are prefixed with the following base URL:
 
-Authorization: Bearer token (from localStorage).
-Query Parameters:
+### 1. Get Titles
+**Endpoint:** `GET /title`  
+**Description:** Retrieves titles for the specified user.  
+**Headers:**  
+- `Authorization`: Bearer token (from `localStorage`).
 
-userId (string): ID of the user to retrieve titles for.
-Expected Response:
+**Query Parameters:**
+- `userId` (string): ID of the user to retrieve titles for.
+
+**Example Request:**
+```javascript
+const response = await getTitles("user_id");
+### Expected Response:
+
+- **Success (200):**
+  ```json
+  {
+    "success": true,
+    "data": [
+      { "id": "title1_id", "title": "Title 1", "userId": "user_id" },
+      { "id": "title2_id", "title": "Title 2", "userId": "user_id" }
+    ]
+  }
+- **Error (400 or 401):**
+  ```json
+   {
+     "success": false,
+     "message": "Token is missing or invalid"
+   }   
 
 Success (200):
 
