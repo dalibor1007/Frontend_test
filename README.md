@@ -75,6 +75,21 @@ The **Title Management** page provides functionality to add and view titles asso
 
 - **`REACT_APP_API_URL`**: Base API URL for backend services.
 
+### API ENDPOINTS
+
+1. Get Titles
+Endpoint: GET /title
+Description: Retrieves titles for the specified user.
+Headers:
+
+Authorization: Bearer token (from localStorage).
+Query Parameters:
+
+userId (string): ID of the user to retrieve titles for.
+Expected Response:
+
+Success (200):
+
 ## Testing
 
 This project includes unit and integration tests located in the `test` directory.
