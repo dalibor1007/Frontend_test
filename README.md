@@ -90,8 +90,8 @@ All requests are prefixed with the following base URL:
 - `userId` (string): ID of the user to retrieve titles for.
 
 **Example Request:**
-```javascript
-const response = await getTitles("user_id");
+
+`const response = await getTitles("user_id");`
 ### Expected Response:
 
 - **Success (200):**
@@ -110,7 +110,7 @@ const response = await getTitles("user_id");
      "message": "Token is missing or invalid"
    }   
 
-Success (200):
+
 
 ## Testing
 
